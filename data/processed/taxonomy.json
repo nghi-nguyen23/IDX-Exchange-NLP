@@ -1,0 +1,1044 @@
+{
+  "terms": [
+    {
+      "id": 1,
+      "term": "living room",
+      "category": "rooms_spaces"
+    },
+    {
+      "id": 2,
+      "term": "family room",
+      "category": "rooms_spaces"
+    },
+    {
+      "id": 3,
+      "term": "dining room",
+      "category": "rooms_spaces"
+    },
+    {
+      "id": 4,
+      "term": "dining area",
+      "category": "rooms_spaces"
+    },
+    {
+      "id": 5,
+      "term": "primary suite",
+      "category": "rooms_spaces"
+    },
+    {
+      "id": 6,
+      "term": "bedroom",
+      "category": "rooms_spaces"
+    },
+    {
+      "id": 7,
+      "term": "bedrooms",
+      "category": "rooms_spaces"
+    },
+    {
+      "id": 8,
+      "term": "bathroom",
+      "category": "rooms_spaces"
+    },
+    {
+      "id": 9,
+      "term": "bathrooms",
+      "category": "rooms_spaces"
+    },
+    {
+      "id": 10,
+      "term": "home office",
+      "category": "rooms_spaces"
+    },
+    {
+      "id": 11,
+      "term": "laundry room",
+      "category": "rooms_spaces"
+    },
+    {
+      "id": 12,
+      "term": "kitchen",
+      "category": "rooms_spaces"
+    },
+    {
+      "id": 13,
+      "term": "loft",
+      "category": "rooms_spaces"
+    },
+    {
+      "id": 14,
+      "term": "den",
+      "category": "rooms_spaces"
+    },
+    {
+      "id": 15,
+      "term": "living area",
+      "category": "rooms_spaces"
+    },
+    {
+      "id": 16,
+      "term": "living space",
+      "category": "rooms_spaces"
+    },
+    {
+      "id": 17,
+      "term": "guest room",
+      "category": "rooms_spaces"
+    },
+    {
+      "id": 18,
+      "term": "bonus room",
+      "category": "rooms_spaces"
+    },
+    {
+      "id": 19,
+      "term": "walk-in closet",
+      "category": "rooms_spaces"
+    },
+    {
+      "id": 20,
+      "term": "entryway",
+      "category": "rooms_spaces"
+    },
+    {
+      "id": 21,
+      "term": "foyer",
+      "category": "rooms_spaces"
+    },
+    {
+      "id": 22,
+      "term": "hallway",
+      "category": "rooms_spaces"
+    },
+    {
+      "id": 23,
+      "term": "basement",
+      "category": "rooms_spaces"
+    },
+    {
+      "id": 24,
+      "term": "attic",
+      "category": "rooms_spaces"
+    },
+    {
+      "id": 25,
+      "term": "mudroom",
+      "category": "rooms_spaces"
+    },
+    {
+      "id": 26,
+      "term": "pantry",
+      "category": "rooms_spaces"
+    },
+    {
+      "id": 27,
+      "term": "stainless steel appliances",
+      "category": "kitchen_appliances"
+    },
+    {
+      "id": 28,
+      "term": "stainless steel",
+      "category": "kitchen_appliances"
+    },
+    {
+      "id": 29,
+      "term": "steel appliances",
+      "category": "kitchen_appliances"
+    },
+    {
+      "id": 30,
+      "term": "kitchen island",
+      "category": "kitchen_appliances"
+    },
+    {
+      "id": 31,
+      "term": "granite countertops",
+      "category": "kitchen_appliances"
+    },
+    {
+      "id": 32,
+      "term": "quartz countertops",
+      "category": "kitchen_appliances"
+    },
+    {
+      "id": 33,
+      "term": "countertops",
+      "category": "kitchen_appliances"
+    },
+    {
+      "id": 34,
+      "term": "cabinets",
+      "category": "kitchen_appliances"
+    },
+    {
+      "id": 35,
+      "term": "custom cabinets",
+      "category": "kitchen_appliances"
+    },
+    {
+      "id": 36,
+      "term": "refrigerator",
+      "category": "kitchen_appliances"
+    },
+    {
+      "id": 37,
+      "term": "dishwasher",
+      "category": "kitchen_appliances"
+    },
+    {
+      "id": 38,
+      "term": "oven",
+      "category": "kitchen_appliances"
+    },
+    {
+      "id": 39,
+      "term": "range",
+      "category": "kitchen_appliances"
+    },
+    {
+      "id": 40,
+      "term": "microwave",
+      "category": "kitchen_appliances"
+    },
+    {
+      "id": 41,
+      "term": "cooktop",
+      "category": "kitchen_appliances"
+    },
+    {
+      "id": 42,
+      "term": "double oven",
+      "category": "kitchen_appliances"
+    },
+    {
+      "id": 43,
+      "term": "gas range",
+      "category": "kitchen_appliances"
+    },
+    {
+      "id": 44,
+      "term": "breakfast bar",
+      "category": "kitchen_appliances"
+    },
+    {
+      "id": 45,
+      "term": "breakfast nook",
+      "category": "kitchen_appliances"
+    },
+    {
+      "id": 46,
+      "term": "walk-in pantry",
+      "category": "kitchen_appliances"
+    },
+    {
+      "id": 47,
+      "term": "chef kitchen",
+      "category": "kitchen_appliances"
+    },
+    {
+      "id": 48,
+      "term": "updated kitchen",
+      "category": "kitchen_appliances"
+    },
+    {
+      "id": 49,
+      "term": "remodeled kitchen",
+      "category": "kitchen_appliances"
+    },
+    {
+      "id": 50,
+      "term": "open kitchen",
+      "category": "kitchen_appliances"
+    },
+    {
+      "id": 51,
+      "term": "eat-in kitchen",
+      "category": "kitchen_appliances"
+    },
+    {
+      "id": 52,
+      "term": "kitchen appliances",
+      "category": "kitchen_appliances"
+    },
+    {
+      "id": 53,
+      "term": "floor plan",
+      "category": "property_features"
+    },
+    {
+      "id": 54,
+      "term": "open floor plan",
+      "category": "property_features"
+    },
+    {
+      "id": 55,
+      "term": "natural light",
+      "category": "property_features"
+    },
+    {
+      "id": 56,
+      "term": "attached garage",
+      "category": "property_features"
+    },
+    {
+      "id": 57,
+      "term": "garage",
+      "category": "property_features"
+    },
+    {
+      "id": 58,
+      "term": "fireplace",
+      "category": "property_features"
+    },
+    {
+      "id": 59,
+      "term": "walk-in closet",
+      "category": "property_features"
+    },
+    {
+      "id": 60,
+      "term": "storage",
+      "category": "property_features"
+    },
+    {
+      "id": 61,
+      "term": "high ceilings",
+      "category": "property_features"
+    },
+    {
+      "id": 62,
+      "term": "vaulted ceilings",
+      "category": "property_features"
+    },
+    {
+      "id": 63,
+      "term": "dual sinks",
+      "category": "property_features"
+    },
+    {
+      "id": 64,
+      "term": "solar",
+      "category": "property_features"
+    },
+    {
+      "id": 65,
+      "term": "owned solar",
+      "category": "property_features"
+    },
+    {
+      "id": 66,
+      "term": "central air",
+      "category": "property_features"
+    },
+    {
+      "id": 67,
+      "term": "air conditioning",
+      "category": "property_features"
+    },
+    {
+      "id": 68,
+      "term": "heating",
+      "category": "property_features"
+    },
+    {
+      "id": 69,
+      "term": "hardwood floors",
+      "category": "property_features"
+    },
+    {
+      "id": 70,
+      "term": "tile flooring",
+      "category": "property_features"
+    },
+    {
+      "id": 71,
+      "term": "carpet",
+      "category": "property_features"
+    },
+    {
+      "id": 72,
+      "term": "windows",
+      "category": "property_features"
+    },
+    {
+      "id": 73,
+      "term": "double pane windows",
+      "category": "property_features"
+    },
+    {
+      "id": 74,
+      "term": "ceiling fan",
+      "category": "property_features"
+    },
+    {
+      "id": 75,
+      "term": "built-in storage",
+      "category": "property_features"
+    },
+    {
+      "id": 76,
+      "term": "two-story",
+      "category": "property_features"
+    },
+    {
+      "id": 77,
+      "term": "single-story",
+      "category": "property_features"
+    },
+    {
+      "id": 78,
+      "term": "energy efficient",
+      "category": "property_features"
+    },
+    {
+      "id": 79,
+      "term": "pool",
+      "category": "amenities"
+    },
+    {
+      "id": 80,
+      "term": "spa",
+      "category": "amenities"
+    },
+    {
+      "id": 81,
+      "term": "pool spa",
+      "category": "amenities"
+    },
+    {
+      "id": 82,
+      "term": "sparkling pool",
+      "category": "amenities"
+    },
+    {
+      "id": 83,
+      "term": "community pool",
+      "category": "amenities"
+    },
+    {
+      "id": 84,
+      "term": "clubhouse",
+      "category": "amenities"
+    },
+    {
+      "id": 85,
+      "term": "gym",
+      "category": "amenities"
+    },
+    {
+      "id": 86,
+      "term": "fitness center",
+      "category": "amenities"
+    },
+    {
+      "id": 87,
+      "term": "tennis court",
+      "category": "amenities"
+    },
+    {
+      "id": 88,
+      "term": "basketball court",
+      "category": "amenities"
+    },
+    {
+      "id": 89,
+      "term": "playground",
+      "category": "amenities"
+    },
+    {
+      "id": 90,
+      "term": "gated community",
+      "category": "amenities"
+    },
+    {
+      "id": 91,
+      "term": "security",
+      "category": "amenities"
+    },
+    {
+      "id": 92,
+      "term": "guard gated",
+      "category": "amenities"
+    },
+    {
+      "id": 93,
+      "term": "hoa",
+      "category": "amenities"
+    },
+    {
+      "id": 94,
+      "term": "community amenities",
+      "category": "amenities"
+    },
+    {
+      "id": 95,
+      "term": "recreation area",
+      "category": "amenities"
+    },
+    {
+      "id": 96,
+      "term": "walking trails",
+      "category": "amenities"
+    },
+    {
+      "id": 97,
+      "term": "dog park",
+      "category": "amenities"
+    },
+    {
+      "id": 98,
+      "term": "private pool",
+      "category": "amenities"
+    },
+    {
+      "id": 99,
+      "term": "hot tub",
+      "category": "amenities"
+    },
+    {
+      "id": 100,
+      "term": "sauna",
+      "category": "amenities"
+    },
+    {
+      "id": 101,
+      "term": "community center",
+      "category": "amenities"
+    },
+    {
+      "id": 102,
+      "term": "guest parking",
+      "category": "amenities"
+    },
+    {
+      "id": 103,
+      "term": "covered parking",
+      "category": "amenities"
+    },
+    {
+      "id": 104,
+      "term": "elevator",
+      "category": "amenities"
+    },
+    {
+      "id": 105,
+      "term": "yard",
+      "category": "outdoor_features"
+    },
+    {
+      "id": 106,
+      "term": "backyard",
+      "category": "outdoor_features"
+    },
+    {
+      "id": 107,
+      "term": "front yard",
+      "category": "outdoor_features"
+    },
+    {
+      "id": 108,
+      "term": "patio",
+      "category": "outdoor_features"
+    },
+    {
+      "id": 109,
+      "term": "covered patio",
+      "category": "outdoor_features"
+    },
+    {
+      "id": 110,
+      "term": "balcony",
+      "category": "outdoor_features"
+    },
+    {
+      "id": 111,
+      "term": "deck",
+      "category": "outdoor_features"
+    },
+    {
+      "id": 112,
+      "term": "garden",
+      "category": "outdoor_features"
+    },
+    {
+      "id": 113,
+      "term": "landscaping",
+      "category": "outdoor_features"
+    },
+    {
+      "id": 114,
+      "term": "landscaped",
+      "category": "outdoor_features"
+    },
+    {
+      "id": 115,
+      "term": "lot",
+      "category": "outdoor_features"
+    },
+    {
+      "id": 116,
+      "term": "large lot",
+      "category": "outdoor_features"
+    },
+    {
+      "id": 117,
+      "term": "corner lot",
+      "category": "outdoor_features"
+    },
+    {
+      "id": 118,
+      "term": "cul-de-sac",
+      "category": "outdoor_features"
+    },
+    {
+      "id": 119,
+      "term": "outdoor space",
+      "category": "outdoor_features"
+    },
+    {
+      "id": 120,
+      "term": "outdoor living",
+      "category": "outdoor_features"
+    },
+    {
+      "id": 121,
+      "term": "outdoor entertaining",
+      "category": "outdoor_features"
+    },
+    {
+      "id": 122,
+      "term": "courtyard",
+      "category": "outdoor_features"
+    },
+    {
+      "id": 123,
+      "term": "terrace",
+      "category": "outdoor_features"
+    },
+    {
+      "id": 124,
+      "term": "porch",
+      "category": "outdoor_features"
+    },
+    {
+      "id": 125,
+      "term": "fenced yard",
+      "category": "outdoor_features"
+    },
+    {
+      "id": 126,
+      "term": "private yard",
+      "category": "outdoor_features"
+    },
+    {
+      "id": 127,
+      "term": "mature trees",
+      "category": "outdoor_features"
+    },
+    {
+      "id": 128,
+      "term": "mountain views",
+      "category": "outdoor_features"
+    },
+    {
+      "id": 129,
+      "term": "ocean views",
+      "category": "outdoor_features"
+    },
+    {
+      "id": 130,
+      "term": "city views",
+      "category": "outdoor_features"
+    },
+    {
+      "id": 131,
+      "term": "shopping",
+      "category": "location_access"
+    },
+    {
+      "id": 132,
+      "term": "dining",
+      "category": "location_access"
+    },
+    {
+      "id": 133,
+      "term": "shopping dining",
+      "category": "location_access"
+    },
+    {
+      "id": 134,
+      "term": "easy access",
+      "category": "location_access"
+    },
+    {
+      "id": 135,
+      "term": "freeway access",
+      "category": "location_access"
+    },
+    {
+      "id": 136,
+      "term": "located near",
+      "category": "location_access"
+    },
+    {
+      "id": 137,
+      "term": "conveniently located",
+      "category": "location_access"
+    },
+    {
+      "id": 138,
+      "term": "near schools",
+      "category": "location_access"
+    },
+    {
+      "id": 139,
+      "term": "near shopping",
+      "category": "location_access"
+    },
+    {
+      "id": 140,
+      "term": "near dining",
+      "category": "location_access"
+    },
+    {
+      "id": 141,
+      "term": "near parks",
+      "category": "location_access"
+    },
+    {
+      "id": 142,
+      "term": "near beach",
+      "category": "location_access"
+    },
+    {
+      "id": 143,
+      "term": "near freeway",
+      "category": "location_access"
+    },
+    {
+      "id": 144,
+      "term": "near downtown",
+      "category": "location_access"
+    },
+    {
+      "id": 145,
+      "term": "walking distance",
+      "category": "location_access"
+    },
+    {
+      "id": 146,
+      "term": "close to schools",
+      "category": "location_access"
+    },
+    {
+      "id": 147,
+      "term": "close to shopping",
+      "category": "location_access"
+    },
+    {
+      "id": 148,
+      "term": "close to dining",
+      "category": "location_access"
+    },
+    {
+      "id": 149,
+      "term": "close to freeway",
+      "category": "location_access"
+    },
+    {
+      "id": 150,
+      "term": "quiet neighborhood",
+      "category": "location_access"
+    },
+    {
+      "id": 151,
+      "term": "gated community",
+      "category": "location_access"
+    },
+    {
+      "id": 152,
+      "term": "school district",
+      "category": "location_access"
+    },
+    {
+      "id": 153,
+      "term": "public transportation",
+      "category": "location_access"
+    },
+    {
+      "id": 154,
+      "term": "commuter access",
+      "category": "location_access"
+    },
+    {
+      "id": 155,
+      "term": "central location",
+      "category": "location_access"
+    },
+    {
+      "id": 156,
+      "term": "desirable neighborhood",
+      "category": "location_access"
+    },
+    {
+      "id": 157,
+      "term": "new",
+      "category": "condition_style"
+    },
+    {
+      "id": 158,
+      "term": "updated",
+      "category": "condition_style"
+    },
+    {
+      "id": 159,
+      "term": "remodeled",
+      "category": "condition_style"
+    },
+    {
+      "id": 160,
+      "term": "renovated",
+      "category": "condition_style"
+    },
+    {
+      "id": 161,
+      "term": "modern",
+      "category": "condition_style"
+    },
+    {
+      "id": 162,
+      "term": "luxury",
+      "category": "condition_style"
+    },
+    {
+      "id": 163,
+      "term": "custom",
+      "category": "condition_style"
+    },
+    {
+      "id": 164,
+      "term": "thoughtfully designed",
+      "category": "condition_style"
+    },
+    {
+      "id": 165,
+      "term": "move-in ready",
+      "category": "condition_style"
+    },
+    {
+      "id": 166,
+      "term": "well maintained",
+      "category": "condition_style"
+    },
+    {
+      "id": 167,
+      "term": "turnkey",
+      "category": "condition_style"
+    },
+    {
+      "id": 168,
+      "term": "upgraded",
+      "category": "condition_style"
+    },
+    {
+      "id": 169,
+      "term": "recently renovated",
+      "category": "condition_style"
+    },
+    {
+      "id": 170,
+      "term": "newly remodeled",
+      "category": "condition_style"
+    },
+    {
+      "id": 171,
+      "term": "new construction",
+      "category": "condition_style"
+    },
+    {
+      "id": 172,
+      "term": "contemporary",
+      "category": "condition_style"
+    },
+    {
+      "id": 173,
+      "term": "traditional",
+      "category": "condition_style"
+    },
+    {
+      "id": 174,
+      "term": "craftsman",
+      "category": "condition_style"
+    },
+    {
+      "id": 175,
+      "term": "ranch",
+      "category": "condition_style"
+    },
+    {
+      "id": 176,
+      "term": "Mediterranean",
+      "category": "condition_style"
+    },
+    {
+      "id": 177,
+      "term": "Spanish style",
+      "category": "condition_style"
+    },
+    {
+      "id": 178,
+      "term": "mid-century",
+      "category": "condition_style"
+    },
+    {
+      "id": 179,
+      "term": "architectural",
+      "category": "condition_style"
+    },
+    {
+      "id": 180,
+      "term": "classic",
+      "category": "condition_style"
+    },
+    {
+      "id": 181,
+      "term": "elegant",
+      "category": "condition_style"
+    },
+    {
+      "id": 182,
+      "term": "designer finishes",
+      "category": "condition_style"
+    },
+    {
+      "id": 183,
+      "term": "square feet",
+      "category": "measurements_financial"
+    },
+    {
+      "id": 184,
+      "term": "sq ft",
+      "category": "measurements_financial"
+    },
+    {
+      "id": 185,
+      "term": "acre",
+      "category": "measurements_financial"
+    },
+    {
+      "id": 186,
+      "term": "acres",
+      "category": "measurements_financial"
+    },
+    {
+      "id": 187,
+      "term": "lot size",
+      "category": "measurements_financial"
+    },
+    {
+      "id": 188,
+      "term": "living area",
+      "category": "measurements_financial"
+    },
+    {
+      "id": 189,
+      "term": "price",
+      "category": "measurements_financial"
+    },
+    {
+      "id": 190,
+      "term": "listing price",
+      "category": "measurements_financial"
+    },
+    {
+      "id": 191,
+      "term": "hoa dues",
+      "category": "measurements_financial"
+    },
+    {
+      "id": 192,
+      "term": "hoa fee",
+      "category": "measurements_financial"
+    },
+    {
+      "id": 193,
+      "term": "seller financing",
+      "category": "measurements_financial"
+    },
+    {
+      "id": 194,
+      "term": "financing",
+      "category": "measurements_financial"
+    },
+    {
+      "id": 195,
+      "term": "monthly payment",
+      "category": "measurements_financial"
+    },
+    {
+      "id": 196,
+      "term": "property tax",
+      "category": "measurements_financial"
+    },
+    {
+      "id": 197,
+      "term": "taxes",
+      "category": "measurements_financial"
+    },
+    {
+      "id": 198,
+      "term": "price per square foot",
+      "category": "measurements_financial"
+    },
+    {
+      "id": 199,
+      "term": "sqft",
+      "category": "measurements_financial"
+    },
+    {
+      "id": 200,
+      "term": "square footage",
+      "category": "measurements_financial"
+    },
+    {
+      "id": 201,
+      "term": "bedrooms bathrooms",
+      "category": "measurements_financial"
+    },
+    {
+      "id": 202,
+      "term": "two car garage",
+      "category": "measurements_financial"
+    },
+    {
+      "id": 203,
+      "term": "three car garage",
+      "category": "measurements_financial"
+    },
+    {
+      "id": 204,
+      "term": "one acre",
+      "category": "measurements_financial"
+    },
+    {
+      "id": 205,
+      "term": "half acre",
+      "category": "measurements_financial"
+    },
+    {
+      "id": 206,
+      "term": "low hoa",
+      "category": "measurements_financial"
+    },
+    {
+      "id": 207,
+      "term": "no hoa",
+      "category": "measurements_financial"
+    },
+    {
+      "id": 208,
+      "term": "solar lease",
+      "category": "measurements_financial"
+    }
+  ]
+}
