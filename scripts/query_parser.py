@@ -29,7 +29,7 @@ class QueryParser:
 
         # PRICE
         price_between = re.search(
-            r"between\s+\$?(\d+(?:\.\d+)?)([km]?)\s+(?:and|to)\s+\$?(\d+(?:\.\d+)?)([km]?)",
+            r"between\s+\$?(\d+(?:\.\d+)?)([km])\s+(?:and|to)\s+\$?(\d+(?:\.\d+)?)([km])",
             query_lower
         )
 
@@ -45,15 +45,16 @@ class QueryParser:
 
         else:
             price_max_patterns = [
-                r"under\s+\$?(\d+(?:\.\d+)?)([km]?)",
-                r"below\s+\$?(\d+(?:\.\d+)?)([km]?)",
-                r"less than\s+\$?(\d+(?:\.\d+)?)([km]?)",
-                r"up to\s+\$?(\d+(?:\.\d+)?)([km]?)",
-                r"max(?:imum)?\s+\$?(\d+(?:\.\d+)?)([km]?)"
+                r"under\s+\$?(\d+(?:\.\d+)?)([km])",
+                r"below\s+\$?(\d+(?:\.\d+)?)([km])",
+                r"less than\s+\$?(\d+(?:\.\d+)?)([km])",
+                r"up to\s+\$?(\d+(?:\.\d+)?)([km])",
+                r"max(?:imum)?\s+\$?(\d+(?:\.\d+)?)([km])"
             ]
 
             for pattern in price_max_patterns:
                 match = re.search(pattern, query_lower)
+
                 if match:
                     filters["price_max"] = self._parse_number(
                         match.group(1),
@@ -62,11 +63,11 @@ class QueryParser:
                     break
 
             price_min_patterns = [
-                r"over\s+\$?(\d+(?:\.\d+)?)([km]?)",
-                r"above\s+\$?(\d+(?:\.\d+)?)([km]?)",
-                r"more than\s+\$?(\d+(?:\.\d+)?)([km]?)",
-                r"at least\s+\$?(\d+(?:\.\d+)?)([km]?)",
-                r"minimum\s+\$?(\d+(?:\.\d+)?)([km]?)"
+                r"over\s+\$?(\d+(?:\.\d+)?)([km])",
+                r"above\s+\$?(\d+(?:\.\d+)?)([km])",
+                r"more than\s+\$?(\d+(?:\.\d+)?)([km])",
+                r"at least\s+\$?(\d+(?:\.\d+)?)([km])",
+                r"minimum\s+\$?(\d+(?:\.\d+)?)([km])"
             ]
 
             for pattern in price_min_patterns:
@@ -105,7 +106,7 @@ class QueryParser:
 
             else:
                 bed_exact = re.search(
-                    r"(\d+)\s*(?:bed|beds|bedroom|bedrooms|br)\b",
+                    r"(?<!up to )(?<!max )(?<!maximum )(\d+)\s*(?:bed|beds|bedroom|bedrooms|br)\b",
                     query_lower
                 )
 
@@ -142,7 +143,15 @@ class QueryParser:
                     query_lower
                 )
 
-            if bath_min:
+            bath_max = re.search(
+                r"(?:up to|maximum|max)\s+(\d+(?:\.\d+)?)\s*(?:bath|baths|bathroom|bathrooms)",
+                query_lower
+            )
+
+            if bath_max:
+                filters["bathrooms_max"] = float(bath_max.group(1))
+
+            elif bath_min:
                 filters["bathrooms_min"] = float(bath_min.group(1))
 
             else:
@@ -154,18 +163,10 @@ class QueryParser:
                 if bath_exact:
                     filters["bathrooms"] = float(bath_exact.group(1))
 
-        bath_max = re.search(
-            r"(?:up to|maximum|max)\s+(\d+(?:\.\d+)?)\s*(?:bath|baths|bathroom|bathrooms)",
-            query_lower
-        )
-
-        if bath_max:
-            filters["bathrooms_max"] = float(bath_max.group(1))
-
       
         # CITY
         city_match = re.search(
-            r"\bin\s+([a-zA-Z\s]+?)(?=\s+(?:under|below|over|above|with|without|at least|between)|$)",
+            r"(?<!-)\bin\s+([a-zA-Z\s]+?)(?=\s+(?:under|below|over|above|with|without|at least|between)|$)",
             query,
             re.IGNORECASE
         )
@@ -180,13 +181,13 @@ class QueryParser:
 
         for amenity in self.amenities:
             if re.search(
-                rf"\b(?:without|no)\s+(?:a\s+)?{re.escape(amenity)}\b",
+                rf"\b(?:without|no)\s+(?:a\s+)?{re.escape(amenity)}s?\b",
                 query_lower
             ):
                 excluded_amenities.append(amenity)
 
             elif re.search(
-                rf"\b{re.escape(amenity)}\b",
+                rf"\b{re.escape(amenity)}s?\b",
                 query_lower
             ):
                 amenities.append(amenity)
@@ -255,3 +256,55 @@ class QueryParser:
             sql = "SELECT * FROM rets_property"
 
         return sql, params
+
+
+import mysql.connector
+
+
+class SchemaValidator:
+    def __init__(self):
+        conn = mysql.connector.connect(
+            host="localhost",
+            user="root",
+            password="root",
+            database="real_estate"
+        )
+
+        cursor = conn.cursor()
+        cursor.execute(
+            """
+            SELECT DISTINCT L_City
+            FROM rets_property
+            WHERE L_City IS NOT NULL
+            """
+        )
+
+        self.valid_cities = {row[0] for row in cursor.fetchall()}
+
+        cursor.close()
+        conn.close()
+
+    def validate_query(self, filters):
+        errors = []
+
+        if "city" in filters:
+            if filters["city"] not in self.valid_cities:
+                errors.append(
+                    f"City '{filters['city']}' not found in database"
+                )
+
+        for key in ["price_min", "price_max"]:
+            if key in filters:
+                if filters[key] < 100000 or filters[key] > 10000000:
+                    errors.append(
+                        f"Price {filters[key]} outside typical range"
+                    )
+
+        for key in ["bedrooms", "bedrooms_min", "bedrooms_max"]:
+            if key in filters:
+                if filters[key] < 1 or filters[key] > 10:
+                    errors.append(
+                        f"Bedroom count {filters[key]} seems invalid"
+                    )
+
+        return len(errors) == 0, errors
