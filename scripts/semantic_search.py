@@ -15,18 +15,19 @@ class SemanticSearcher:
         embeddings = self.model.encode(
             remarks_list,
             convert_to_numpy=True
-        )
+        ).astype("float32")
 
-        embeddings = embeddings.astype("float32")
+        faiss.normalize_L2(embeddings)
 
         dimension = embeddings.shape[1]
 
-        self.index = faiss.IndexFlatL2(dimension)
+        self.index = faiss.IndexFlatIP(dimension)
         self.index.add(embeddings)
 
         self.listings = remarks_list
 
         return embeddings
+
 
     def search(self, query, k=5):
         query_embedding = self.model.encode(
@@ -34,7 +35,9 @@ class SemanticSearcher:
             convert_to_numpy=True
         ).astype("float32")
 
-        distances, indices = self.index.search(
+        faiss.normalize_L2(query_embedding)
+
+        scores, indices = self.index.search(
             query_embedding,
             k
         )
@@ -44,7 +47,7 @@ class SemanticSearcher:
         for i, index in enumerate(indices[0]):
             results.append({
                 "remark": self.listings[index],
-                "distance": float(distances[0][i])
+                "score": float(scores[0][i])
             })
 
         return results
